@@ -10,7 +10,8 @@ namespace PadawansTask11
                 throw new ArgumentNullException();
             if (array.Length == 0)
                 throw new ArgumentException();
-
+            if (accuracy < 0 || accuracy > 1)
+                throw new ArgumentOutOfRangeException();
             for(int i=1; i<array.Length - 1; i++)
             {
                 double num1 = 0, num2 = 0;
